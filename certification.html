@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Certifications</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+        background: linear-gradient(135deg, #f1f5f2, #666);
+        color: #e5e7eb;
+        padding: 50px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .cert-container {
+        width: 900px;
+        padding: 40px;
+        border-radius: 16px;
+
+        background: rgba(255, 255, 255, 0.06);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 36px;
+        margin-bottom: 30px;
+        color: #5d4037;
+    }
+
+    .cert-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .cert-card {
+        padding: 18px;
+        border-radius: 12px;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        transition: 0.3s ease;
+    }
+
+    .cert-card:hover {
+        transform: translateY(-4px);
+        background: rgba(255, 255, 255, 0.08);
+    }
+
+    .cert-title {
+        font-size: 16px;
+        font-weight: 600;
+        color: #93c5fd;
+        margin-bottom: 5px;
+    }
+
+    .cert-desc {
+        font-size: 14px;
+        color: #666;
+        line-height: 1.5;
+    }
+
+    @media (max-width: 768px) {
+        .cert-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+
+</style>
+
+</head>
+
+<body>
+
+<div class="cert-container">
+
+    <h1>Certifications</h1>
+
+    <div class="cert-grid">
+
+        <div class="cert-card">
+            <div class="cert-title">HP Life / HP Foundation</div>
+            <div class="cert-desc">Completed professional certification program by HP focusing on business and digital skills.</div>
+        </div>
+
+        <div class="cert-card">
+            <div class="cert-title">Data Science and Analytics</div>
+            <div class="cert-desc">Training in data analysis, visualization, and fundamentals of data-driven decision making.</div>
+        </div>
+
+        <div class="cert-card">
+            <div class="cert-title">Digital Skills: User Experience</div>
+            <div class="cert-desc">Learned UX principles including user research, interface design, and usability concepts.</div>
+        </div>
+
+        <div class="cert-card">
+            <div class="cert-title">Cloud Computing</div>
+            <div class="cert-desc">Introduction to cloud platforms, deployment models, and cloud-based services.</div>
+        </div>
+
+        <div class="cert-card">
+            <div class="cert-title">Workshop</div>
+            <div class="cert-desc">Hands-on technical workshop experience in modern development tools and practices.</div>
+        </div>
+
+        <div class="cert-card">
+            <div class="cert-title">IIT Bombay Techfest</div>
+            <div class="cert-desc">Participated in IIT Bombay Techfest and gained exposure to advanced technology concepts.</div>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
