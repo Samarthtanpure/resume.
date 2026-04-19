@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAMARTH TANPURE</title>
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: radial-gradient(circle at center, #F1F5F2 0%, #6c6c6c 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+
+      
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 5%;
+        }
+
+        .logo {
+            font-size: 38px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: #5d4037;
+             margin-left: 20px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            align-items: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #5d4037;
+        }
+
+        .contact-btn {
+            background-color: #5d4037;
+            color: white !important;
+            padding: 10px 25px;
+            border-radius: 25px;
+        }
+
+       
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px 5%;
+            height: calc(100vh - 100px);
+        }
+
+        .hero-image {
+            flex: 1;
+            display: flex;
+            justify-content:flex-start;
+        }
+
+       
+        .img-box {
+            width: 400px;
+            height: 400px;
+            background: url('user3.png') no-repeat center;
+            background-size: cover;
+            border: 4px solid #5d4037;
+            border-radius: 45%;
+        }
+
+        
+        .hero-text {
+            flex: 1;
+            padding-left: 30px;
+        }
+
+        .hero-text h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .hero-text h1 span {
+            color: #8d6e63;
+        }
+
+        .typing-text {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .hero-text p {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            max-width: 500px;
+        }
+
+        
+        .social-icons {
+            margin-bottom: 30px;
+        }
+
+        .social-icons a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border: 1px solid #5d4037;
+            border-radius: 50%;
+            margin-right: 15px;
+            color: #5d4037;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .social-icons a:hover {
+            background-color: #5d4037;
+            color: #fff;
+        }
+
+        
+        .cv-btn {
+            display: inline-block;
+            background-color: #5d4037;
+            color: #fff;
+            padding: 12px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .cv-btn:hover {
+            background-color: #3e2723;
+        }
+
+        
+        @media (max-width: 968px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                height: auto;
+            }
+
+            .hero-text {
+                padding-left: 0;
+                margin-top: 40px;
+            }
+
+            nav ul {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo"></div>
+
+        <nav>
+            <ul>
+                <li><a href="resume.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="certification.html">Certification</a></li>
+                <li><a href="tools.html">Tools</a></li>
+                <li><a href="contact.html" class="contact-btn">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <!-- Image -->
+        <div class="hero-image">
+            <div class="img-box"></div>
+        </div>
+
+        
+        <div class="hero-text">
+            <h1>Hey I'm <span>Samarth</span></h1>
+            <div class="typing-text">I'm a CSE student</div>
+
+            <p>
+                I'm a Second-Year B.Tech Student at Sanjivani University, pursuing my passion for Computer Science And Engineering (CSE). With a strong foundation in programming and design, I'm driven to innovate and solve real-world problems.
+            </p>
+
+            <div class="social-icons">
+                <a href="https://github.com/settings/profile"><i class="fab fa-github"></i></a>
+                <a href="https://github.com/settings/profile"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/public-profile/settings/
+"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.linkedin.com/public-profile/settings/"><i class="fab fa-twitter"></i></a>
+            </div>
+
+            <a href="cv.html" class="cv-btn">Download CV</a>
+        </div>
+    </section>
+
+</body>
+</html>
