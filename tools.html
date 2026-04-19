@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tools Section</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+        background: linear-gradient(135deg, #f1f5f2, #666);
+        color: #e5e7eb;
+        padding: 50px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .tools-container {
+        width: 900px;
+        padding: 40px;
+        border-radius: 16px;
+
+        background: rgba(255, 255, 255, 0.06);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 36px;
+        margin-bottom: 30px;
+        color: #5d4037;
+    }
+
+    .tools-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .tool-card {
+        text-align: center;
+        padding: 20px;
+        border-radius: 12px;
+
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+
+        transition: 0.3s ease;
+        font-size: 15px;
+        font-weight: 500;
+        color: #666;
+    }
+
+    .tool-card:hover {
+        transform: translateY(-5px);
+        background: rgba(255, 255, 255, 0.08);
+        color: #93c5fd;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .tools-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: 500px) {
+        .tools-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+
+</style>
+
+</head>
+
+<body>
+
+<div class="tools-container">
+
+    <h1>Tools & Technologies</h1>
+
+    <div class="tools-grid">
+
+        <div class="tool-card">Python</div>
+        <div class="tool-card">CSS</div>
+        <div class="tool-card">C++</div>
+        <div class="tool-card">HTML</div>
+        <div class="tool-card">Canva</div>
+        <div class="tool-card">Figma</div>
+        <div class="tool-card">FlutterFlow</div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
